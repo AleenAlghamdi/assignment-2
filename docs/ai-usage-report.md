@@ -87,6 +87,7 @@ function initializeContactForm() {
     .
     .
     .
+}
 
 ```
 
@@ -191,6 +192,9 @@ body.dark {
     --brand: #9a8adc;         /* light purple for dark bg */
     --shadow: 0 10px 25px rgba(0, 0, 0, .35); /* stronger shadow */
 }
+.
+.
+.
 ```
 
 **My Edits**  
