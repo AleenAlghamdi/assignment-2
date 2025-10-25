@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+
+  <meta charset="UTF-8" />
+    <!-- Tells mobile browsers to match the layout width to the device screen and start at 100% zoom -->
+  <meta name = "viewport" content = "width=device-width, initial-scale=1" />
+    <!-- The tab title -->
+  <title>Aleen — Portfolio</title>
+    <!-- CSS file -->
+  <link rel="stylesheet" href="css/styles.css" />
+    <!-- JavaScript file -->
+    <script defer src="js/script.js"></script>
+
+</head>
+
+<body>
+
+
+
+
+
+  <!--             1              -->
+  <!--  Site Header & Navigation  -->
+
+  <header class = "site-header">      <!-- styled header -->
+      <div class = "container nav">   <!-- centered row with flex layout -->
+
+          <!-- link back to top -->
+          <a href = "#top" class = "brand">
+              <img src = "assets/profile.svg" alt = "" width = "32" height = "32"> <!-- decorative icon -->
+              <span>Aleen</span> <!-- visible site name -->
+          </a>
+
+
+      <nav class = "nav-links" aria-label = "Primary"> <!-- main site links -->
+        <a href = "#about">About</a> <!-- jump to About section -->
+        <a href = "#projects">Projects</a> <!-- jump to Projects section -->
+        <a href = "#contact">Contact</a> <!-- jump to Contact section -->
+
+
+          <!-- light/dark switch -->
+        <button id = "themeToggle" class = "theme-toggle" aria-pressed = "false" aria-label = "Toggle theme">
+            <!-- icon changes in JS -->
+          <span class = "toggle-icon" aria-hidden = "true">🌑</span>
+        </button>
+      </nav>
+
+
+    </div>
+  </header>
+
+
+
+
+
+  <!--          2           -->
+  <!-- Main content wrapper -->
+  <main id = "top"> <!-- top anchor for "Back to top" -->
+
+
+
+      <!--  2.1  -->
+      <!-- intro -->
+      <section class = "intro"> <!-- big intro area -->
+      <div class="container intro-grid"> <!-- grid: text + image -->
+        <div class="intro-copy"> <!-- left column -->
+          <p id = "greeting" class = "eyebrow">Hello!</p>
+          <h1 class = "headline">Learning, building, and growing through every project</h1> <!-- main message -->
+          <p class = "tagline">A light simple personal portfolio</p> <!-- short subtext -->
+          <div class = "intro-ctas"> <!-- buttons -->
+            <a class = "btn primary" href = "#projects">See Projects</a> <!-- go to projects -->
+            <a class = "btn ghost" href = "#contact">Contact Me</a> <!-- go to contact -->
+          </div>
+        </div>
+
+        <div class="intro-media"> <!-- right column -->
+          <img src="assets/IMG_6583.jpg" alt="KFUPM picture" />
+        </div>
+      </div>
+    </section>
+
+
+
+    <!--       2.2       -->
+    <!--  About Section  -->
+    <section id = "about" class = "section">  <!-- anchor + vertical spacing -->
+      <div class = "container two-col">       <!-- two columns on wide screens -->
+
+          <!-- left side -->
+        <div class = "col">
+          <img class = "profile" src = "assets/IMG_0482.jpg" alt = "Profile photo" />  <!-- round avatar -->
+        </div>
+
+          <!-- right side -->
+        <div class = "col">
+          <h2>About Me</h2> <!-- section title -->
+          <p> <!-- short intro -->
+              I’m Aleen Alghamdi, a Computer Science major in my junior year at KFUPM, with a hands-on mindset
+              at the intersection of software and hardware. I enjoy turning ideas into working systems and creating
+              things people actually use. I also love graphic design—it’s my favorite dual thing: creativity and relief
+          </p>
+          <p> <!-- personal line -->
+            <em>“Clear goals, clean outputs.”</em>
+          </p>
+          <ul class="chips"> <!-- quick skill tags -->
+            <li>Figma</li>   <!-- skill 1 -->
+            <li>Hardware/Low-level</li> <!-- skill 2 -->
+            <li>Python</li> <!-- skill 3 -->
+            <li>Data Science</li> <!-- skill 4 -->
+          </ul>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!--       2.3        -->
+    <!-- Projects Section -->
+    <section id = "projects" class = "section alt">
+      <div class = "container"> <!-- centered content -->
+        <div class = "section-head"> <!-- heading + blurb -->
+          <h2>Projects</h2> <!-- section title -->
+          <p class = "section-desc">A couple of examples of my projects - filter by category</p>
+
+            <!-- Filter buttons will be dynamically inserted here by JavaScript -->
+        </div>
+        <div class = "grid projects">
+
+          <!-- Project 1 -->
+            <div class = "card"> <!-- one project card -->
+                <img src = "assets/FCC_Visual_Identity.jpg" alt = "Project 1 preview - FCC_Visual_Identity" width = "640" height = "360"> <!-- project image -->
+                <div class = "card-body"> <!-- text area -->
+                    <h3>Graphic Design - FCC Visual Identity</h3> <!-- project title -->
+                    <p> The Visual Identity for the Female Computer Club defines a cohesive brand across digital and print.
+                        It includes a modular logo suite, color palette, typography, icon set, and layout grid, and bilingual
+                        (Arabic/English) brand guidelines
+                    </p> <!-- short description -->
+                </div>
+            </div>
+
+          <!-- Project 2 -->
+            <div class = "card"> <!-- one project card -->
+                <img src = "assets/ICS108_Project.jpg" alt = "Project 2 preview - ICS108_Project" width = "640" height = "360"> <!-- project image -->
+                <div class = "card-body"> <!-- text area -->
+                    <h3>ICS108 - Building an Event Management System using JavaFX</h3> <!-- project title -->
+                    <p>The JavaFX Event Management System is designed to facilitate the organization and booking of various
+                        types of events. It enables users to view events, book tickets, and for administrators to manage event
+                        details efficiently</p> <!-- short description -->
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class = "card"> <!-- one project card -->
+                <img src = "assets/ICS202_Project.jpg" alt = "Project 3 preview - ICS202_Project" width = "640" height = "360"> <!-- project image -->
+                <div class = "card-body"> <!-- text area -->
+                    <h3>ICS202 - Treasure Quest Program</h3> <!-- project title -->
+                    <p>The Pathfinding System is designed to compute the safest, shortest route across a 2D grid with walls,
+                        hazards, a Start (S), and an Exit (E). It enables users to load scenarios, simulate hazard spread, and
+                        return the minimal safe stepsy</p> <!-- short description -->
+                </div>
+            </div>
+
+            <!-- Project 4 -->
+            <div class = "card"> <!-- one project card -->
+                <img src = "assets/COE301_Project.jpg" alt = "Project 4 preview - COE301_Project" width = "640" height = "360"> <!-- project image -->
+                <div class = "card-body"> <!-- text area -->
+                    <h3> Design & Simulation of a 16-Bit Pipelined CPU </h3> <!-- project title -->
+                    <p>The 16-bit Pipelined RISC Processor is designed to implement and evaluate a compact 16-bit CPU in
+                        Logisim-evolution. It enables loading and running test programs on a pipelined datapath.</p> <!-- short description -->
+                </div>
+            </div>
+        </div>
+
+
+          <!-- NEW: Empty state for projects -->
+          <div id="projectsEmptyState" class="empty-state" style="display: none;">
+              <div class="icon">🔍</div>
+              <h3>No projects found</h3>
+              <p>Try selecting a different filter or check back later for new projects.</p>
+              <button class="btn ghost" onclick="filterProjects('all')">Show All Projects</button>
+          </div>
+
+
+      </div>
+    </section>
+
+
+
+    <!--      2.4       -->
+    <!-- Skills Section -->
+    <section id = "skills" class = "section">
+      <div class = "container"> <!-- centered content -->
+        <div class = "section-head"> <!-- heading + blurb -->
+          <h2>Skills</h2> <!-- section title -->
+          <p class = "section-desc">What I’m Good At</p>
+        </div>
+
+          <!-- pill grid -->
+        <div class = "grid skills">
+          <div class="pill">Graphic Design</div>
+          <div class="pill">Python</div>
+          <div class="pill">Java</div>
+          <div class="pill">Verilog & Xilinx ISE</div>
+          <div class="pill">MIPS Assembly</div>
+          <div class="pill">Figma</div>
+          <div class="pill">Problem Solving</div>
+          <div class="pill">Detail-oriented</div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!--        2.5        -->
+    <!--  Contact Section  -->
+    <section id = "contact" class = "section alt">
+      <div class = "container"> <!-- centered content -->
+        <div class = "section-head"> <!-- heading + blurb -->
+          <h2>Contact</h2>  <!-- section title -->
+          <p class="section-desc">Send a quick note 😁</p> <!-- info text -->
+        </div>
+
+        <form id = "contactForm" class = "form" novalidate> <!-- JS validates, no server -->
+          <!-- name field -->
+          <div class = "form-row">
+            <label for = "name">Name</label>
+            <input id = "name" name = "name" type = "text" placeholder = "Your name" required /> <!-- required input -->
+            <small class = "error" id = "nameError"></small> <!-- inline error area -->
+          </div>
+
+          <!-- email field -->
+          <div class = "form-row">
+            <label for = "email">Email</label>
+            <input id = "email" name = "email" type = "email" placeholder = "you@example.com" required /> <!-- email pattern -->
+            <small class = "error" id = "emailError"></small> <!-- inline error area -->
+          </div>
+
+          <!-- message field -->
+          <div class = "form-row">
+            <label for = "message">Message</label>
+            <textarea id = "message" name = "message" rows = "6" placeholder = "Write your message..." required></textarea>
+            <div class = "meta">
+              <small><span id = "charCount">0</span>/500</small>
+              <small class = "error" id = "messageError"></small> <!-- inline error area -->
+            </div>
+          </div>
+
+          <button class = "btn primary" type = "submit">Send Message</button> <!-- submit -->
+          <p id = "formStatus" class = "status" role = "status" aria-live = "polite"></p> <!-- success text area -->
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+
+
+
+
+  <!--     3    -->
+  <!--  Footer  -->
+  <footer class = "site-footer">
+    <div class = "container"> <!-- aligned width -->
+      <p>© <span id = "year"></span> Aleen · Built with HTML/CSS/JS.</p>
+    </div>
+  </footer>
+
+
+
+</body>
+</html>
